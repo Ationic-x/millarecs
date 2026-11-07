@@ -129,12 +129,12 @@ When a run is wide enough to pay for the dispatch, `par_for_each_mut` on a
 ## Demos
 
 ```
-cargo run -p millarecs_playground --bin boids        # parallel queries, ~1400 agents
-cargo run -p millarecs_playground --bin particles    # command churn, lifecycle events
-cargo run -p millarecs_playground --bin orbits       # parent/child hierarchy
-cargo run -p millarecs_playground --bin lanes        # table vs sparse migration
-cargo run -p millarecs_playground --bin field        # move N entities, up to 5M
-cargo run -p millarecs_playground --bin bullet_hell  # scripted shooter: waves, spells
+cargo run --release -p millarecs_playground --bin boids        # parallel queries, ~1400 agents
+cargo run --release -p millarecs_playground --bin particles    # command churn, lifecycle events
+cargo run --release -p millarecs_playground --bin orbits       # parent/child hierarchy
+cargo run --release -p millarecs_playground --bin lanes        # table vs sparse migration
+cargo run --release -p millarecs_playground --bin field        # move N entities, up to 5M
+cargo run --release -p millarecs_playground --bin bullet_hell  # scripted shooter: waves, spells
 ```
 
 All of them open a window; append `-- --frames 240` for a headless smoke run.
