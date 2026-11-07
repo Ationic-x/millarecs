@@ -1,0 +1,15 @@
+[package]
+name = "millarecs_playground"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+description = "Visual examples for millarecs, rendered with wgpu."
+publish = false
+
+[dependencies]
+millarecs = { path = "..", version = "0.1.0" }
+millarecs_macros = { path = "../macros", version = "0.1.0" }
+wgpu = "30"
+winit = "0.30"
+pollster = "1"
+bytemuck = { version = "1", features = ["derive"] }
